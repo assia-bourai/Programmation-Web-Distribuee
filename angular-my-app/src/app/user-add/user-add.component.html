@@ -1,0 +1,13 @@
+<h3>Formulaire d'ajout d'un utilisateur </h3>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+  <input type = "text" name = "name" placeholder = "Nom de l'utilisateur" formControlName="name" >
+  <br/>
+  
+  <input type = "text" name = "idBooks" placeholder = "identifiants des livres lus" formControlName="idBooks" >
+  <br/>
+  
+  <button class="button" type="submit" (click)="addUser(user)"> Ajouter</button>
+  
+</form>
+
